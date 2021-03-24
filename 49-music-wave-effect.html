@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *::before,
+        ::after {
+            margin: 0%;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: 'Pangolin',
+                cursive;
+        }
+
+        html {
+            font-size: 65.2%;
+        }
+
+        :root {
+            --bg-color: #2d3436;
+            --center-box-bg-color: #b9b9b9;
+            --wave-color: #ff7675;
+            --href-hover-text-color: #003761;
+            --href-slide-text-color: #dfe6e9;
+        }
+
+        .main-div {
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--bg-color);
+            display: -ms-grid;
+            display: grid;
+            place-items: center;
+        }
+
+        .main-div .center {
+            width: 20rem;
+            height: 14.9rem;
+            border-radius: 1rem;
+            border-bottom: 0.2rem solid var(--wave-color);
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        .main-div .center .wave {
+            width: 0.4rem;
+            height: 15rem;
+            border-radius: 10rem 10rem 0rem 0rem;
+            background-color: var(--wave-color);
+            margin: 0rem 0.8rem;
+            -webkit-animation: wave 1s linear infinite;
+            animation: wave 1s linear infinite;
+            -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+        }
+
+        .main-div .center .wave:nth-child(2) {
+            -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+        }
+
+        .main-div .center .wave:nth-child(3) {
+            -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+        }
+
+        .main-div .center .wave:nth-child(4) {
+            -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+        }
+
+        .main-div .center .wave:nth-child(5) {
+            -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+        }
+
+        .main-div .center .wave:nth-child(6) {
+            -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+        }
+
+        .main-div .center .wave:nth-child(7) {
+            -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+        }
+
+        .main-div .center .wave:nth-child(8) {
+            -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+        }
+
+        .main-div .center .wave:nth-child(9) {
+            -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+        }
+
+        .main-div .center .wave:nth-child(10) {
+            -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+        }
+
+        @-webkit-keyframes wave {
+            0% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+
+            50% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+
+            100% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+
+        @keyframes wave {
+            0% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+
+            50% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+
+            100% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+
+        /*# sourceMappingURL=var.css.map */
+    </style>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="center">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </div>
+</body>
+
+</html>
